@@ -2,7 +2,7 @@ $color-primary: #039be5;
 $color-background: #fff;
 $color-grey: #f0f0f0;
 $color-text: rgba(0, 0, 0, 0.87);
-$max-width-page: 1080px;
+$max-width: 1080px;
 
 @font-face {
   font-family: "Untitled Sans";
@@ -47,7 +47,7 @@ a {
 #header-inner {
   display: grid;
   grid-template-columns: 1fr 350px;
-  max-width: $max-width-page;
+  max-width: $max-width;
   margin: auto;
   align-items: center;
 }
@@ -90,7 +90,7 @@ a {
   color: $color-text;
   display: grid;
   grid-template-columns: 1fr 350px;
-  max-width: $max-width-page;
+  max-width: $max-width;
   margin: auto;
 }
 
@@ -146,11 +146,11 @@ a {
   }
 }
 
-@media screen and (max-width: 768px) {
-#header-inner {
+@media screen and (max-width: 767px) {
+  #header-inner {
     grid-template-columns: 1fr;
-}
-#logo {
+  }
+  #logo {
     padding-bottom: 0px;
-}
+  }
 }

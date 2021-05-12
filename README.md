@@ -47,3 +47,23 @@ const findSaleFromId = (id) => {
 }
 
 findSaleFromId("j_123");
+
+https://jackrhumphrey.github.io/Assignment/
+
+I coded the layout in plain HTML for simplicity. I mostly used CSS grid to have the most control over the layout. I used normalize.css to add sensible defaults. I used semantic HTML to make it more responsive.
+
+I introduced a max width for it to be more readable on large screens.
+
+I used Sass variables for colours and the max page width, so I could edit them easily in one place. I also used nesting for multiple selectors.
+
+I used Untitled Sans by Klim Type Foundary because it is a good basic font. I also used Material Design for the search icon.
+
+I used black text on a white background, but I decreased the opacity of the text colour slightly to make it easier on the eyes. I used a light grey for the sidebar to seperate it from the content, but keep it subtle. I used the blue sparingly to make it more interesting. I didn't want any blue on the sidebar because it would pull focus.
+
+I thought the sidebar would probably include navigation, so I added page anchors. I used position sticky to make the page anchors more useful as you scroll down the page. This wouldn't work well if the sidebar had too much content. In this case, it would be better to keep the sidebar inline, or have it be able to scroll independently.
+
+I added a break point to put the sidebar at the bottom when the content becomes too narrow, which is not great for the page anchors. I added another break point to put the search box on a new line on very small screens.
+
+I didn't make the width of the sidebar responsive because I wanted it to ensure it was a sensible width.
+
+I made the search box line up with the sidebar, but this isn't strictly necessary so I didn't use a variable.
