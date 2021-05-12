@@ -66,9 +66,10 @@ a {
     border: 0;
     height: 60px;
     padding: 0px 20px;
-    width: calc(100% - 40px);
+    width: 100%;
     outline: none;
     border-radius: 0px;
+    box-sizing: border-box;
   }
   button {
     color: $color-text;
@@ -76,7 +77,6 @@ a {
     font-size: 32px;
     border: 0;
     height: 60px;
-    width: 60px;
     border-radius: 0px;
     padding: 0;
   }
