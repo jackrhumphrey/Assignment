@@ -20,6 +20,7 @@ Another thing to be aware of is margin collapse. The margin between two elements
 
 Both Google Chrome and Firefox helpfully provide a visualisation of the box model of an element inside dev tools.
 
+```javascript
 const sumOfPrice = () => {
     let total = 0;
     sales.forEach(sale => total += sale.price)
@@ -47,6 +48,7 @@ const findSaleFromId = (id) => {
 }
 
 findSaleFromId("j_123");
+```
 
 https://jackrhumphrey.github.io/Assignment/
 
