@@ -30,15 +30,13 @@ const sumOfPrice = () => {
 sumOfPrice();
 
 const soldIn2017 = () => {
-    const salesCopy = sales.filter(sale => sale.dateSold.slice(0, 4) === "2017")
-    return salesCopy;
+    return sales.filter(sale => sale.dateSold.slice(0, 4) === "2017");
 }
 
 soldIn2017();
 
 const itemsSold = () => {
-    const salesCopy = sales.map(sale => sale.itemSold).sort()
-    return salesCopy;
+    return sales.map(sale => sale.itemSold).sort();
 }
 
 itemsSold();
