@@ -19,3 +19,31 @@ By default, properties which control the height and width of the element apply o
 Another thing to be aware of is margin collapse. The margin between two elements may collapse to be the larger of the two in certain situations.
 
 Both Google Chrome and Firefox helpfully provide a visualisation of the box model of an element inside dev tools.
+
+const sumOfPrice = () => {
+    let total = 0;
+    sales.forEach(sale => total += sale.price)
+    return parseFloat(total.toFixed(2));
+}
+
+sumOfPrice();
+
+const soldIn2017 = () => {
+    const salesCopy = sales.filter(sale => sale.dateSold.slice(0, 4) === "2017")
+    return salesCopy;
+}
+
+soldIn2017();
+
+const itemsSold = () => {
+    const salesCopy = sales.map(sale => sale.itemSold).sort()
+    return salesCopy;
+}
+
+itemsSold();
+
+const findSaleFromId = (id) => {
+    return sales.find(sale => sale.id === id);
+}
+
+findSaleFromId("j_123");
